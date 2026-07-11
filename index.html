@@ -9,30 +9,35 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
-    
+
   <title>Forecast-Tracker</title>
 </head>
 <body>
   <div class="forecast-app">  
 
   <header>
-    <form>
-      <input type="search" placeholder="Enter a city..." required/>
-      <input type="submit" value="search"/>        
+    <form class="search-form">
+      <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+      <input type="submit" value="Search" class="search-form-button"/>        
     </form>
 
   </header>
 
   <main>
+    <div class="weather-app-data">
     <div>
-    <h1>Paris</h1>
-    <p>
+    <h1 class="weather-app-city">Paris</h1>
+    <p class="weather-app-details">
       Friday 14:39, broken clouds <br />
-      Humidity: 27%, Wind: 3.68km/h
+      Humidity: <strong>27%</strong>, Wind: <strong>3.68km/h</strong>
     </p>      
     </div>
 
-    <div>    🌤️ 12°C      </div>
+    <div class="weather-app-temperature-container">
+    <div class="weather-app-icon">🌤️</div>
+    <div class="weather-app-value">12</div>
+    <div class="weather-app-unit">°C</div>
+    </div>
   </main>
 
   <footer>Coded by <a href="https://github.com/MonseAG-ux" target="_blank">Monserrat AG</a> hosted on  
@@ -40,6 +45,7 @@
     <a href="https://forecast-tracker.netlify.app/" target="_blank">on Netlify</a> 
   </footer>
   </div>
+  <script src="src/index.js"></script>
 </body>
 
 </html>
