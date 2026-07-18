@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,44 +14,98 @@
 
   <title>Forecast-Tracker</title>
 </head>
+
 <body>
-  <div class="forecast-app">  
+  <div class="forecast-app">
 
-  <header>
-    <form class="search-form" id="search-form">
-      <input type="search" placeholder="Enter a city..." required 
-      id="search-form-input"
-      class="search-form-input"/>
-      <input type="submit" value="Search" class="search-form-button"/>        
-    </form>
+    <header>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required id="search-form-input" class="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button" />
+      </form>
 
-  </header>
+    </header>
 
-  <main>
-    <div class="weather-app-data">
-    <div>
-    <h1 class="weather-app-city" id="city">Paris</h1>
-    <p class="weather-app-details">
-      <span id="time">Saturday 18:30</span>, 
-      <span id="description">clear sky</span> <br />
-      Humidity: <strong id="humidity">35%</strong>, Wind: <strong id="wind-speed">3.58 km/h</strong>
-    </p>      
-    </div>
+    <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city" id="city">Paris</h1>
+          <p class="weather-app-details">
+            <span id="time">Saturday 18:30</span>,
+            <span id="description">clear sky</span> <br />
+            Humidity: <strong id="humidity">35%</strong>, Wind: <strong id="wind-speed">3.58 km/h</strong>
+          </p>
+      </div>
 
-    <div class="weather-app-temperature-container">
-    <div id="icon">  
-      <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" 
-      class="weather-app-icon" />
-    </div>
-    <div class="weather-app-value" id="temperature">12</div>
-    <div class="weather-app-unit">°C</div>
-    </div>
-  </main>
+        <div class="weather-app-temperature-container">
+          <div id="icon">
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+              class="weather-app-icon" /></div>
+            <div class="weather-app-value" id="temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+        </div>
+      </div>
 
-  <footer>Coded by <a href="https://github.com/MonseAG-ux" target="_blank">Monserrat AG</a> hosted on  
-    <a href="https://github.com/MonseAG-ux/weather-tracker" target="_blank">GitHub</a> and website hosted 
-    <a href="https://forecast-tracker.netlify.app/" target="_blank">on Netlify</a> 
-  </footer>
+        <div class="weather-forecast" id="forecast">
+
+          
+
+          <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Wed</div>
+          <div class="weather-forecast-icon">🌤️</div>
+          <div class="weather-forecast-temperatures">
+            <div class="weather-forecast-temperature">
+              <strong>15°</strong>
+            </div>
+            <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+          
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Thu</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+          
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Fri</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+      
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Sat</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15°</strong>
+              </div>
+              <div class="weather-forecast-temperature">9°</div>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+          
+        </div>
+        
+    </main>
+
+    <footer>Coded by <a href="https://github.com/MonseAG-ux" target="_blank">Monserrat AG</a> hosted on
+      <a href="https://github.com/MonseAG-ux/weather-tracker" target="_blank">GitHub</a> and website hosted
+      <a href="https://forecast-tracker.netlify.app/" target="_blank">on Netlify</a>
+    </footer>
   </div>
   <script src="src/index.js"></script>
 </body>
